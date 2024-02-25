@@ -1,11 +1,11 @@
 {
-  "name": "@123ishatest/ts-library-template",
-  "version": "0.2.1",
-  "description": "A template to help you (me) quickly get started with publishing an NPM package",
-  "homepage": "https://github.com/123ishaTest/ts-library-template",
+  "name": "@123ishatest/lands-unknown-com-client",
+  "version": "0.0.0",
+  "description": "A TypeScript client to integrate with the lands-unknown server into your (my) games!",
+  "homepage": "https://github.com/123ishaTest/lands-unknown-com-client",
   "bugs": {
     "email": "ishadijcks@gmail.com",
-    "url": "https://github.com/123ishaTest/ts-library-template/issues"
+    "url": "https://github.com/123ishaTest/lands-unknown-com-client/issues"
   },
   "author": "Isha",
   "license": "MIT",
@@ -21,7 +21,9 @@
     "format": "prettier --write .",
     "test": "vitest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^1.6.7"
+  },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
