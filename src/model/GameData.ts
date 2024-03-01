@@ -1,7 +1,7 @@
 import { GameAchievement } from '@/model/GameAchievement.ts';
 
 export interface GameData {
-  name: string;
+  title: string;
   gameId: string;
   achievements: GameAchievement[];
 }

@@ -1,6 +1,6 @@
 {
   "name": "@123ishatest/lands-unknown-com-client",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A TypeScript client to integrate with the lands-unknown server into your (my) games!",
   "homepage": "https://github.com/123ishaTest/lands-unknown-com-client",
   "bugs": {

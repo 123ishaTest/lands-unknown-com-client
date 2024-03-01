@@ -77,6 +77,7 @@ export class LuClient {
         if (error.response?.status === 404) {
           throw new NotFoundError(error.response.data.error);
         }
+        throw new Error(error.message);
       } else {
         console.log(error);
       }
