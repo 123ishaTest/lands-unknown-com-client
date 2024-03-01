@@ -2,8 +2,6 @@ import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 import { AuthenticationError } from '@/errors/AuthenticationError.ts';
 import { UserToken } from '@/model/UserToken.ts';
 import { ServerError } from '@/errors/ServerError.ts';
-import * as https from 'https';
-import { isInProduction } from '@/util/environment.ts';
 import { Info } from '@/model/Info.ts';
 import { NotFoundError } from '@/errors/NotFoundError.ts';
 
@@ -17,13 +15,6 @@ export class LuClient {
       baseURL: baseUrl,
       timeout: 1000,
     });
-
-    // Allow self-signed certificates during development
-    if (!isInProduction()) {
-      this._axios.defaults.httpsAgent = new https.Agent({
-        rejectUnauthorized: false,
-      });
-    }
   }
 
   // TODO(@Isha): Add registration once that's possible via API
